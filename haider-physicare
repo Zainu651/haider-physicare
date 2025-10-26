@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haider Physicare | Your Trusted Partner in Therapy</title>
+  <style>
+    /* ===== Global Styles ===== */
+    :root {
+      --primary: #0a9396;
+      --secondary: #005f73;
+      --accent: #94d2bd;
+      --light: #f9fafb;
+      --dark: #0a0a0a;
+      --text: #333;
+      --radius: 14px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      height: 80px;
+      background: white;
+      border-radius: 50% 50% 0 0;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: #e0fbfc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ===== Navigation Bar ===== */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* ===== Main Content ===== */
+    section {
+      max-width: 1100px;
+      margin: 100px auto;
+      padding: 40px 25px;
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: var(--secondary);
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      color: var(--primary);
+      margin-top: 40px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 1.05rem;
+    }
+
+    /* ===== Quote ===== */
+    .quote {
+      font-style: italic;
+      background: linear-gradient(135deg, #e0fdfb, #f8fffe);
+      border-left: 5px solid var(--primary);
+      padding: 15px 20px;
+      margin: 30px 0;
+      border-radius: var(--radius);
+      color: #555;
+    }
+
+    /* ===== Services ===== */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .service-card {
+      background-color: #f9fdfd;
+      border: 1px solid #e0f2f1;
+      padding: 25px;
+      border-radius: var(--radius);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-card h4 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    /* ===== Button ===== */
+    .button {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 14px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+      margin-top: 25px;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 80px;
+    }
+
+    footer a {
+      color: #94d2bd;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      section {
+        margin: 60px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Haider Physicare</h1>
+    <p>Your trusted partner in therapy, recovery, and holistic healing</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>Welcome to Haider Physicare</h2>
+    <p>
+      At <strong>Haider Physicare</strong>, we believe that every person deserves to live a pain-free, active, and fulfilling life.
+      Our mission is to help you heal, strengthen, and regain confidence in your body through professional and personalized physiotherapy care.
+    </p>
+
+    <div class="quote">
+      “Your body is your lifelong companion — treat it with care, strength, and kindness.”
+    </div>
+
+    <p>
+      Whether you’re recovering from an injury, managing chronic pain, or simply aiming to improve mobility, we’re here to guide you every step of the way.
+      Our clinic offers a peaceful and supportive environment where healing begins not just with treatment, but with understanding and encouragement.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Specialized Therapy Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h4>💆‍♂️ Physiotherapy</h4>
+        <p>Relieve pain, restore function, and improve your quality of life.</p>
+      </div>
+      <div class="service-card">
+        <h4>🦵 Sports Injury Rehab</h4>
+        <p>Safe and effective recovery for athletes and active individuals.</p>
+      </div>
+      <div class="service-card">
+        <h4>🧘‍♀️ Posture & Ergonomics</h4>
+        <p>Improve body alignment, balance, and confidence.</p>
+      </div>
+      <div class="service-card">
+        <h4>💪 Strength & Mobility</h4>
+        <p>Rebuild muscle strength and enhance flexibility.</p>
+      </div>
+      <div class="service-card">
+        <h4>🌿 Pain Management</h4>
+        <p>Natural and effective therapies to ease chronic pain.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;">
+      <a href="#" class="button">Book an Appointment</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p><strong>Address:</strong> Near Jutial, Gilgit-Baltistan</p>
+    <p>📞 <a href="tel:+923XXXXXXXXX">+92 3XX XXXXXXX</a></p>
+    <p>✉️ <a href="mailto:info@haiderphysicare.com">info@haiderphysicare.com</a></p>
+    <p>© 2025 Haider Physicare | Caring for Every Step You Take</p>
+  </footer>
+</body>
+</html>
